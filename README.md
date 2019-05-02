@@ -26,4 +26,4 @@ Q: Cast before passing to functions?<br>
 A: Nope. Functions do the casting already.
 
 Q: I got another question!<br>
-A: Good for your. Bake yourself and icecream!
+A: Good for your. Bake yourself an icecream!
