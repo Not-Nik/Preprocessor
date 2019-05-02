@@ -12,9 +12,9 @@
 
 func __startup does
     var test = "KKK";
-    if (strcmp(test, "KKK")) then
+    if strcmp(test, "KKK") == 0 then
         printf("Heureka\n");
-    end else then
+    end else )then
         printf("Shit\n");
     end
     return 0;

@@ -9,7 +9,10 @@
 #ifndef Syntax_h
 #define Syntax_h
 
-#define then {
+#define if if (
+#define else else if (1!=0
+
+#define then ){
 #define does {
 
 #define end }
