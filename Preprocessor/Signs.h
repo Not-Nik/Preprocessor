@@ -2,7 +2,7 @@
 //  Signs.h
 //  Preprocessor
 //
-//  Created by Nik Wipper on 08.04.19.
+//  Created by Nikolas Wipper on 08.04.19.
 //  Copyright © 2019 Nikolas Wipper. All rights reserved.
 //
 
@@ -10,9 +10,12 @@
 #define Signs_h
 
 #define is ==
-#define not !
-#define and &&
-#define or ||
+
+#ifndef __cplusplus
+    #define not !
+    #define and &&
+    #define or ||
+#endif
 
 #define larger >
 #define higher >
