@@ -7,4 +7,8 @@
 #include "Syntax.h"
 #include "Types.h"
 
+#ifdef IWANTBRACKETS
+#warning "Using brackets removes overwriting of try"
+#endif
+
 #endif /*PREPROCESSOR_PREPROCESSOR_H*/

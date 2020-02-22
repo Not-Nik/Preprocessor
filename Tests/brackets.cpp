@@ -3,55 +3,55 @@
 #import <cstdio>
 #import <cstring>
 #import <fstream>
+
+#define IWANTBRACKETS
 // Include PP after C++ stuff
 // All the code is in the headers, including if statements n shit which break bc their not designed for PP
 #import <Preprocessor/Preprocessor.h>
 
 // If its not main, C++ can guess the return type since C++14
-func myFunc() does
+func myFunc()
+{
     return 0;
-fi
+}
 
 // You'll have to use this if using C++98 or C++03
-i32 myOldFunc() does
+i32 myOldFunc()
+{
     return 1;
-fi
+}
 
 // When it's main our you want some special return type you can do '-> <type>' before 'does'
 // You can do this since C++11
-func main() -> i32 does
+func main() -> i32
+{
     // Default c strings
     string test = "KaK";
     string lol = "YXX";
-    // If doesn't need brackets \o/
-    if strcmp(test, "KaK") is 0 and strcmp(test, "AAA") isnt 0 then
-            puts("Heureka");
-    // Elif doesn't either and it exists in the first place
-    elif strcmp(lol, "YXX") then
-            puts("Shit");
-    else then
-            puts("F*ck no!");
-    end
+
+    // We have cleaner code, but have to use parentheses
+    if (strcmp(test, "KaK") is 0 and strcmp(test, "AAA") isnt 0)
+        puts("Heureka");
+    elif (strcmp(lol, "YXX"))
+        puts("Shit");
+    else
+        puts("F*ck no!");
 
     puts("For loop:");
     // No brackets for for
-    for int i = 0; i < 5; i++ do
+    for (int i = 0; i < 5; i++)
         printf(" %i", i);
-    end
 
     int i = 0;
     puts("\nWhile loop:");
-    // And no brackets for while
-    while i < 5 do
+    while (i < 5)
+    {
         printf(" %i", i);
         i++;
-    end
+    }
 
-    // Overwritten try
-    try
-        std::ifstream myFile("unexist.txt");
-    // End is where the actual try action happens
-    // You see right, we check for errors every time we end any scope statement
-    end
+    std::ifstream myFile("unexist.txt");
+    // We don't have the overwritten try but we can still check for errors
+    checkError()
     return (myFunc() && myOldFunc());
-fi
+}
