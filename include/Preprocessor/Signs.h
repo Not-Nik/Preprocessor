@@ -1,15 +1,12 @@
-//
-//  Signs.h
-//  Preprocessor
-//
-//  Created by Nikolas Wipper on 08.04.19.
-//  Copyright © 2019 Nikolas Wipper. All rights reserved.
-//
+// Preprocessor (c) Nikolas Wipper 2020
 
-#ifndef Signs_h
-#define Signs_h
+#ifndef PREPROCESSOR_SIGNS_H
+#define PREPROCESSOR_SIGNS_H
 
 #define is ==
+#define equals ==
+
+#define isnt !=
 
 #ifndef __cplusplus
     #define not !
@@ -28,4 +25,4 @@
 #define lower <
 #define shorter <
 
-#endif /* Signs_h */
+#endif /*PREPROCESSOR_SIGNS_H*/

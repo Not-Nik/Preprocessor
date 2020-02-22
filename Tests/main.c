@@ -1,20 +1,16 @@
-//
-//  main.c
-//  Tests
-//
-//  Created by Nikolas Wipper on 08.04.19.
-//  Copyright © 2019 Nikolas Wipper. All rights reserved.
-//
+// Preprocessor (c) Nikolas Wipper 2020
 
 #import <Preprocessor/Preprocessor.h>
 #import <stdio.h>
 #import <string.h>
 #import <errno.h>
 
-int32 _startup does
+// DEPRECATED: Use C++ with the C++14 standard. It's way cooler
+
+i32 main() does
     string test = "KaK";
     string lol = "YXX";
-    if strcmp(test, "KaK") is 0 and strcmp(test, "AAA") then
+    if strcmp(test, "KaK") is 0 and strcmp(test, "AAA") isnt 0 then
         printf("Heureka\n");
     elif strcmp(lol, "YXX") then
         printf("Shit\n");
