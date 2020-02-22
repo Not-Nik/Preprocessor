@@ -17,7 +17,7 @@ i32 myOldFunc() does
     return 1;
 fi
 
-// When it's main our you want some special return type you can do '-> <type>' before 'does'
+// When it's main or you want some special return type you can do '-> <type>' before 'does'
 // You can do this since C++11
 func main() -> i32 does
     // Default c strings
