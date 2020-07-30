@@ -29,4 +29,4 @@ This will output how your code looks like with all the macros applied. Keep in m
 and `cpp` will **not** resolve them.
 
 Q: I got another question!<br>
-A: Good for your. Bake yourself an icecream!
+A: Good for you. Bake yourself an icecream!

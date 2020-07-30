@@ -4,7 +4,7 @@
 #import <cstring>
 #import <fstream>
 // Include PP after C++ stuff
-// All the code is in the headers, including if statements n shit which break bc their not designed for PP
+// All the code is in the headers, including if statements n shit which break bc they're not designed for PP
 #import <Preprocessor/Preprocessor.h>
 
 // If its not main, C++ can guess the return type since C++14
