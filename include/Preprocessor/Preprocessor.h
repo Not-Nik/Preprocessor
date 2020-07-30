@@ -11,4 +11,10 @@
 #warning "Using brackets removes overwriting of try"
 #endif
 
+#ifdef __cplusplus
+#ifndef NDEBUG
+#define DEBUG
+#endif
+#endif
+
 #endif /*PREPROCESSOR_PREPROCESSOR_H*/

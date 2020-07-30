@@ -18,6 +18,11 @@ i32 main() does
         printf("F*ck no!\n");
     end
 
+    forever do
+        printf("Infinite loop\n");
+        break;
+    end
+
     try
         fopen("unexist.txt", "rb");
     end

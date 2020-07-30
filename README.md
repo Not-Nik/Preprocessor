@@ -23,8 +23,8 @@ As there are no weird void pointers anymore and I made pretty nice error outputs
 Try it if you are familiar with C and aware that this can and probably will cause cancer somewhere in your body.
 
 Q: I don't quite get what my code does<br>
-A: You actually made code? However; most systems feature a `cpp` command that applies the C preprocessor.
-Simply type `cpp <myfile.c/cpp>` if you installed this or `cpp -Ipath/to/project/root/include <myfile.c/cpp>`
+A: You actually made code with this? However; most systems feature a `cpp` command that applies the C preprocessor.
+Simply type `cpp <myfile.c/cpp>` if you installed this project or `cpp -Ipath/to/project/root/include <myfile.c/cpp>`
 This will output how your code looks like with all the macros applied. Keep in mind that all the types are typedefs
 and `cpp` will **not** resolve them.
 

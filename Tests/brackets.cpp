@@ -44,6 +44,11 @@ func main() -> i32
         i++;
     }
 
+    forever {
+        puts("\nInfinite loop");
+        break;
+    };
+
     std::ifstream myFile("unexist.txt");
     // We don't have the overwritten try but we can still check for errors
     checkError()

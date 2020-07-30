@@ -24,8 +24,10 @@
 
 #define fi }
 #define end } checkError()
+#define forever for ;;
 #else
 #define elif else if
+#define forever for (;;)
 #endif
 
 #ifdef __cplusplus

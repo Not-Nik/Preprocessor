@@ -22,24 +22,25 @@ fi
 func main() -> i32 does
     // Default c strings
     string test = "KaK";
-    string lol = "YXX";
+    // You can also use var for any variable
+    var lol = "YXX";
     // If doesn't need brackets \o/
     if strcmp(test, "KaK") is 0 and strcmp(test, "AAA") isnt 0 then
-            puts("Heureka");
+        puts("Heureka");
     // Elif doesn't either and it exists in the first place
     elif strcmp(lol, "YXX") then
-            puts("Shit");
+        puts("Shit");
     else then
-            puts("F*ck no!");
+        puts("F*ck no!");
     end
 
     puts("For loop:");
     // No brackets for for
-    for int i = 0; i < 5; i++ do
+    for var i = 0; i < 5; i++ do
         printf(" %i", i);
     end
 
-    int i = 0;
+    var i = 0;
     puts("\nWhile loop:");
     // And no brackets for while
     while i < 5 do
@@ -47,9 +48,14 @@ func main() -> i32 does
         i++;
     end
 
+    forever do
+        puts("\nInfinite loop");
+        break;
+    end
+
     // Overwritten try
     try
-        std::ifstream myFile("unexist.txt");
+        var myFile = std::ifstream("unexist.txt");
     // End is where the actual try action happens
     // You see right, we check for errors every time we end any scope statement
     end
